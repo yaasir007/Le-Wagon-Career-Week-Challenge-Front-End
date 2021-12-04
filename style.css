@@ -7,12 +7,11 @@ body {
 
 .main {
     width: 350px;
-    height: 550px;
+    height: 600px;
     border: 2px transparent;
-    top: 10%;
-    transform: translate(5%, 5%);
     border-radius: 40px;
     background-color: #2f2f39;
+    overflow: visible;
 }
 
 .header {
@@ -46,6 +45,7 @@ body {
     font-size: 23px;
     opacity: 60%;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .radios-span-last{
@@ -61,20 +61,26 @@ hr {
     color: #383842;
 }
 
-#last-line {
-    width: 348px;
-    color: #383842;
-}
-
 .hidden {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    height: 150px;
+    height: 120px;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
+    border: 1px solid white;
+}
+
+#goBack {
+    padding-top: 65px;
+    font-size: 25px;
+}
+
+#nextPost {
+    padding-top: 65px;
+    font-size: 25px;
 }

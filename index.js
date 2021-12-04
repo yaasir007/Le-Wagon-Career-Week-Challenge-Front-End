@@ -13,10 +13,9 @@ fetch("https://teclead.de/recruiting/radios")
 
       const img1 = document.querySelector("#img")
 
-    const body = document.body
     r1.innerText = data.radios[0].name
     r1Channel.innerText = data.radios[0].frequency
-    img1.innerHTML = `<img src="${data.radios[0]}.image">`
+    img1.innerHTML = `<img src=${data.radios[0].image}>`
 
     r2.innerText = data.radios[1].name
     r2Channel.innerText = data.radios[1].frequency
@@ -26,4 +25,16 @@ fetch("https://teclead.de/recruiting/radios")
 
     r4.innerText = data.radios[3].name
     r4Channel.innerText = data.radios[3].frequency
+
+    
+  const details = document.querySelector('.hidden');
+  r1.addEventListener('click', () => {
+      if (details.style.display === 'flex') {
+      details.style.display = 'none'; 
+      } else {
+        details.style.display = 'flex'; 
+      }
+    });
   });
+
+  
