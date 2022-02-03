@@ -11,7 +11,7 @@ fetch("https://teclead.de/recruiting/radios")
       const r3Channel = document.querySelector("#radioChannel3");
       const r4Channel = document.querySelector("#radioChannel4");
 
-      const img1 = document.querySelector("#img")
+      const img1 = document.querySelector("#img");
 
     r1.innerText = data.radios[0].name
     r1Channel.innerText = data.radios[0].frequency
