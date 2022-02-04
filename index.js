@@ -35,6 +35,14 @@ fetch("https://teclead.de/recruiting/radios")
         details.style.display = 'flex'; 
       }
     });
+
+    r2.addEventListener('click', () => {
+      if (details.style.display === 'flex') {
+      details.style.display = 'none'; 
+      } else {
+        details.style.display = 'flex'; 
+      }
+    });
   });
 
   
